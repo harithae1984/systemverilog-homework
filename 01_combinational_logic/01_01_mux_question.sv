@@ -22,6 +22,18 @@ module mux_4_1
 
   // Using code for mux_2_1 as an example,
   // write code for 4:1 mux using "?:" operator
+mux_4_1_width_2 inst0
+  (
+    [1:0] d0, d1, d2, d3
+    sel,
+    [1:0] y
+   );
+ mux_4_1_width_2 inst1
+  (
+    [3:2] d0, d1, d2, d3,
+    sel,
+    [3:2] y
+   );
 
 
 endmodule
